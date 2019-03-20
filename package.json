@@ -2,16 +2,14 @@
   "name": "litman_logan_chatapp",
   "version": "1.0.0",
   "description": "social media app",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app"
   },
   "author": "Logan Litman",
   "license": "ISC",
-  "devDependencies": {
-    "express": "^4.16.4"
-  },
   "dependencies": {
+    "express": "^4.16.4",
     "socket.io": "^2.2.0"
   }
 }
