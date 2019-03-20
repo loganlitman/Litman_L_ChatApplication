@@ -1,7 +1,7 @@
 {
-  "name": "litman_l_heroku_test",
+  "name": "litman_logan_chatapp",
   "version": "1.0.0",
-  "description": "homework 1",
+  "description": "social media app",
   "main": "index.js",
   "scripts": {
     "start": "node app"
