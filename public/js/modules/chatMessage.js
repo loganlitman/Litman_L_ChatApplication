@@ -13,4 +13,4 @@ export default {
             matchedID: this.$parent.socketID == this.msg.id
         }
     }
-}
+} //adding stuff
