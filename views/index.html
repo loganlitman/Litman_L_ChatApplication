@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Socket IO Chat with Node! Logan Litman</title>
+	<title>Logan Litman Socket Chat Application</title>
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script> 
 </head>
@@ -10,18 +10,18 @@
 	<main id="app">		
 		<section class="form-container">
 			<label for="nickname">Your Nickname (optional)</label>
-			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
 				<label for="message">Something to say?</label>
-				<textarea class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input type="submit">
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<input type="submit" @click.prevent="dispatchMessage">
 			</form>
 		</section>
 		
 		<section class="messages">
-			<ul id="messages"">
-				
+			<ul id="messages" v-for="message in messages">
+                <newmessage :msg="message"></newmessage>
 			</ul>
 		</section>		
 	</main>
