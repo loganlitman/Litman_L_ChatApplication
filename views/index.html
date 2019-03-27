@@ -20,12 +20,12 @@
 		</section>
 		
 		<section class="messages">
-			<ul id="messages"">
-				
+			<ul id="messages" v-for="message in messages">
+				<newmessage :msg="message"></newmessage>				
 			</ul>
 		</section>		
 	</main>
 	<script src="/socket.io/socket.io.js"></script>
-	<script type="module" src="js/main_vm.js"></script>
+	<script type="module" src="/js/main_vm.js"></script>
 </body>
 </html>
