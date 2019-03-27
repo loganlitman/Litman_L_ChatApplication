@@ -1,15 +1,31 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Logans Awesome Social media app!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+	<meta charset="UTF-8">
+	<title>Socket IO Chat with Node! Logan Litman</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
-    <h1>Testing...</h1>
-    <p>I hope this works lol...</p>
+	<main id="app">		
+		<section class="form-container">
+			<label for="nickname">Your Nickname (optional)</label>
+			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			
+			<form>
+				<label for="message">Something to say?</label>
+				<textarea class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<input type="submit">
+			</form>
+		</section>
+		
+		<section class="messages">
+			<ul id="messages"">
+				
+			</ul>
+		</section>		
+	</main>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="module" src="js/main_vm.js"></script>
 </body>
 </html>
