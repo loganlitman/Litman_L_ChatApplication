@@ -1,4 +1,4 @@
-import ChatMessage from './modules/ChatMessage.js';
+import chatMessage from './modules/chatMessage.js';
 
 const socket = io();
 
@@ -31,7 +31,7 @@ const vm = new Vue({
         }
     },
     components: {
-        newmessage: ChatMessage
+        newmessage: chatMessage
     }
 }).$mount(`#app`);
 
