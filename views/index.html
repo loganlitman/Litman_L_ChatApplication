@@ -7,13 +7,23 @@
 	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
-	<main id="app">		
+	<main id="app">	
 		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
+
+			<h1>Welcome to my chat application!</h1><br>
+			<p>Here, you will be able to talk with your friends 
+				using my javascript and html coding.
+				<br>
+				Simply send this link to your friend, and you guys will be connected
+				to the same chatroom! Enjoy & have some thrilling conversations.
+			</p>
+			<br>
+
+			<label for="nickname">Your Name: <p>Optional</p></label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
-				<label for="message">Something to say?</label>
+				<label for="message">Your Message:</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">
 			</form>
