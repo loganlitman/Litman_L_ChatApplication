@@ -61,7 +61,7 @@ input,textarea {
     display:block;
     width:100%;
     border:2px solid #c1c1c1;
-    border-radius:0;
+    border-radius:8;
     background-color: rgb(236, 236, 236);
     font-size:0.8rem;
     padding:0.4rem;
@@ -115,6 +115,7 @@ form input[type=submit]:hover {
     width:100%;
     padding:8px 12px;
     background-color:white;
+    border: 2px solid grey; 
     border-radius:8px;
     margin-bottom:1rem;
     float:left;
@@ -123,15 +124,17 @@ form input[type=submit]:hover {
 
 .new-message span {
     font-size:0.8rem;
-    color: grey;
+    color: #520000;
+    border-color: grey;
     display:inline;
     font-style: italic;
 }
 
 .my-message {
-    border-radius: 0;
+    border-radius: 8px;
+    font-size: 0.8rem;
     float:right !important;
-    background-color:transparent;
+    background-color:white;
     color:#520000;
     border: 2px solid #520000 
 }
