@@ -2,9 +2,12 @@ import chatMessage from './modules/chatMessage.js';
 
 const socket = io();
 
-function logConnect({sID, message}) { //{sID, message}
+function logConnect({sID, message}){ //sID, message
     console.log(sID, message);
     vm.socketID = sID;
+
+    var newUser = new Object();
+	socket.emit('chat message', { content: "A new user has joined the chat!", object: newUser});
 }
 
 function appendMessage(message) {
